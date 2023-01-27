@@ -37,6 +37,7 @@ dependencies:
   retrofit: ^3.3.1
   json_annotation: ^4.8.0
   json_serializable: ^6.6.0
+  logger: ^1.1.0
 
   # state management
   bloc: ^8.1.0
@@ -77,6 +78,10 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
      - assets/environments/dev/
+     - assets/images/png/
+     - assets/images/svg/
+     - assets/images/gif/
+     - assets/fonts/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

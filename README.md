@@ -17,17 +17,14 @@ https://www.linkedin.com/in/petras-j/
 [x] - implement dependency injector
 [x] - error handler
 [x] - json serializer
-[] - Font system
-[] - Reusable text style
+[x] - Reusable text style
 [x] - Mixin BaseClass with most used services
 [] - implement Hive secure storage for tokens
 [] - Language intl
 [] - Strings to external file
 [] - Flavors Dev, Test, UAT
 [] - add flags on app when using dev/test flavor
-[] - advanced logger (fimber?)
-[] - theme setup
-[] - images on pubspec
+[x] - advanced logger
 
 ### Tests
 [] - example of unit tests
@@ -45,6 +42,9 @@ https://www.linkedin.com/in/petras-j/
 [] - add google crashlytics
 [x] - colors global file
 [x] - image url file
+[] - Font system
+[x] - images on pubspec
+[] - theme setup
 
 ### Git
 [] - setup git template for code review

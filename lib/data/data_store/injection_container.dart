@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter_skeleton_2023/data/api/dio_interceptor.dart';
+import 'package:flutter_skeleton_2023/data/api/dio_logging_interceptor.dart';
 import 'package:flutter_skeleton_2023/data/api/error_handler.dart';
 import 'package:flutter_skeleton_2023/data/repository_impl/joke_repository_impl.dart';
 import 'package:get_it/get_it.dart';
@@ -22,9 +23,10 @@ initFlavorConfig(Flavor flavor) async {
 }
 
 Future<void> init() async {
-  _initNetworking();
   _initErrorHandler();
-//   di.registerLazySingleton(() => NavigationService());
+  _initNetworking();
+
+  // di.registerLazySingleton(() => NavigationService());
 }
 
 _initNetworking() {
@@ -40,13 +42,14 @@ _initNetworking() {
   di.registerLazySingleton(
       () => JokeRepositoryImpl(ApiService(ApiClient(dio))));
 
-  //TODO finish setup
-  // dio.interceptors.addAll([
-  //   DioInterceptor(
-  //       dio: dio,
-  //       errorHandler: di<ErrorHandler>()),
-  //   DioLoggingInterceptor()
-  // ]);
+  ///dio interceptor
+  dio.interceptors.addAll([
+    DioInterceptor(
+        dio: dio,
+        errorHandler: di.get<ErrorHandler>(),
+    ),
+    DioLoggingInterceptor()
+  ]);
 }
 
 _initErrorHandler() {
