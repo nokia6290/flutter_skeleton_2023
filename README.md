@@ -14,9 +14,9 @@ https://www.linkedin.com/in/petras-j/
 [x] - implement repository class
 [x] - implement repository implementation class
 [] - implement navigation service (auto or manual)
-[x] - implement dependency injector (sl. or stacked)
+[x] - implement dependency injector
 [x] - error handler
-[x] - json serializer (retrofit auto generator)
+[x] - json serializer
 [] - Font system
 [] - Reusable text style
 [x] - Mixin BaseClass with most used services

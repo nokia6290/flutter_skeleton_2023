@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_skeleton_2023/data/data_store/injection_container.dart'
     as di;
 import 'package:flutter_skeleton_2023/data/data_store/configurations/flavor_config.dart';
-import 'package:flutter_skeleton_2023/presentation/resources/theme_data_custom.dart';
 import 'package:flutter_skeleton_2023/presentation/screens/home/home_screen.dart';
 
 void main() async {
@@ -19,9 +18,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      // theme: ThemeData.light(useMaterial3: true),
       theme: ThemeData.dark(useMaterial3: true),
-      // theme: ThemeDataCustom().themeData,
       home: const HomeScreen(),
     );
   }
