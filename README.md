@@ -13,9 +13,9 @@ https://www.linkedin.com/in/petras-j/
 - `flutter pub run build_runner build --delete-conflicting-outputs`
 
 ## Getting Started
-[x] - implement dio package
-[x] - implement bloc example
-[x] - implement bloc consumer [UI] example
+- [x] - implement dio package
+- [x] - implement bloc example
+- [x] - implement bloc consumer [UI] example
 [x] - implement api client
 [x] - implement api service call
 [x] - implement repository class
