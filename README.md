@@ -20,23 +20,23 @@ https://www.linkedin.com/in/petras-j/
 - [x] - implement api service call
 - [x] - implement repository class
 - [x] - implement repository implementation class
-- [] - implement navigation service (auto or manual)
+- [ ] - implement navigation service (auto or manual)
 - [x] - implement dependency injector
 - [x] - error handler
 - [x] - json serializer
 - [x] - Reusable text style
 - [x] - Mixin BaseClass with most used services
-- [] - implement Hive secure storage for tokens
-- [] - Language intl
-- [] - Strings to external file
-- [] - Flavors Dev, Test, UAT
-- [] - add flags on app when using dev/test flavor
+- [ ] - implement Hive secure storage for tokens
+- [ ] - Language intl
+- [ ] - Strings to external file
+- [ ] - Flavors Dev, Test, UAT
+- [ ] - add flags on app when using dev/test flavor
 - [x] - advanced logger
 
 ### Tests
-- [] - example of unit tests
-- [] - example of widget tests
-- [] - example of integration tests
+- [ ] - example of unit tests
+- [ ] - example of widget tests
+- [ ] - example of integration tests
 
 ### API example
 - [x] - fetch some data from Chuck Norris API
@@ -45,16 +45,16 @@ https://www.linkedin.com/in/petras-j/
 - [x] - equality
 - [x] - Lints
 - [x] - Runner.sh
-- [] - add sentry
-- [] - add google crashlytics
+- [ ] - add sentry
+- [ ] - add google crashlytics
 - [x] - colors global file
 - [x] - image url file
-- [] - Font system
+- [ ] - Font system
 - [x] - images on pubspec
-- [] - theme setup
+- [ ] - theme setup
 
 ### Git
-- [] - setup git template for code review
+- [ ] - setup git template for code review
 
 # build runner for serializer & other builders
 run on terminal
