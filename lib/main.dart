@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_skeleton_2023/business/services/injection_container.dart'
+import 'package:flutter_skeleton_2023/data/data_store/injection_container.dart'
     as di;
 import 'package:flutter_skeleton_2023/data/data_store/configurations/flavor_config.dart';
 import 'package:flutter_skeleton_2023/presentation/resources/theme_data_custom.dart';
