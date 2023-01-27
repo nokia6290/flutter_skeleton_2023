@@ -5,6 +5,13 @@ Made by Petras Janulevicius
 petras.janulevicius@gmail.com
 https://www.linkedin.com/in/petras-j/
 
+
+### versions
+- Flutter version 3.7.0
+
+*When cloned project run on terminal*
+- `flutter pub run build_runner build --delete-conflicting-outputs`
+
 ## Getting Started
 [x] - implement dio package
 [x] - implement bloc example

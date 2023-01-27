@@ -7,7 +7,7 @@ class BuildBodyWLoader extends StatelessWidget with BasePage {
   final Widget body;
   final bool isHorizontalPadding16;
 
-  const BuildBodyWLoader({
+  const BuildBodyWLoader({super.key,
     required this.isLoading,
     required this.body,
     this.isHorizontalPadding16 = false,
