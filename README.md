@@ -1,2 +1,51 @@
 # flutter_skeleton_2023
- flutter skeleton for 2023
+
+A new Flutter project that has bloc, domain driven design made in 2023
+Made by Petras Janulevicius
+petras.janulevicius@gmail.com
+https://www.linkedin.com/in/petras-j/
+
+## Getting Started
+[x] - implement dio package
+[x] - implement bloc example
+[x] - implement bloc consumer [UI] example
+[x] - implement api client
+[x] - implement api service call
+[x] - implement repository class
+[x] - implement repository implementation class
+[] - implement navigation service (auto or manual)
+[x] - implement dependency injector (sl. or stacked)
+[x] - error handler
+[x] - json serializer (retrofit auto generator)
+[] - Font system
+[] - Reusable text style
+[x] - Mixin BaseClass with most used services
+[] - implement Hive secure storage for tokens
+[] - Language intl
+[] - Strings to external file
+[] - Flavors Dev, Test, UAT
+[] - add flags on app when using dev/test flavor
+[] - advanced logger (fimber?)
+[] - theme setup
+[] - images on pubspec
+
+### Tests
+[] - example of unit tests
+[] - example of widget tests
+[] - example of integration tests
+
+### API example
+[x] - fetch some data from Chuck Norris API
+
+### Other helpful packages
+[x] - equality
+[x] - Lints
+[x] - Runner.sh
+[] - add sentry
+[] - add google crashlytics
+[x] - colors global file
+[] - image url file
+
+# build runner for serializer & other builders
+run on terminal
+- `flutter pub run build_runner build --delete-conflicting-outputs`
