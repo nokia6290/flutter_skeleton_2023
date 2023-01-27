@@ -7,6 +7,7 @@ import 'package:flutter_skeleton_2023/business/services/base_class.dart';
 import 'package:flutter_skeleton_2023/data/data_store/injection_container.dart';
 import 'package:flutter_skeleton_2023/data/api/error_handler.dart';
 import 'package:flutter_skeleton_2023/data/repository_impl/joke_repository_impl.dart';
+import 'package:flutter_skeleton_2023/presentation/resources/image_path.dart';
 import 'package:flutter_skeleton_2023/presentation/widgets/body_loader/build_body_w_loader.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -79,6 +80,8 @@ class _HomeScreenState extends State<HomeScreen> with BasePage {
                 style: Theme.of(context).textTheme.headline4,
               ),
             ),
+            Image.asset(ImagePath.googleLogo.path),
+            Image.asset(ImagePath.googleLogo.imgUrl),
           ],
         ),
       ),

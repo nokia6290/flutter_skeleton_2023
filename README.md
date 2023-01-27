@@ -44,7 +44,10 @@ https://www.linkedin.com/in/petras-j/
 [] - add sentry
 [] - add google crashlytics
 [x] - colors global file
-[] - image url file
+[x] - image url file
+
+### Git
+[] - setup git template for code review
 
 # build runner for serializer & other builders
 run on terminal
