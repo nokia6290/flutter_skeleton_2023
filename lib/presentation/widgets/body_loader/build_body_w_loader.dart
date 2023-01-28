@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_skeleton_2023/business/services/base_class.dart';
+import 'package:flutter_skeleton_2023/presentation/widgets/base_class.dart';
 import 'package:flutter_skeleton_2023/presentation/widgets/loader/app_loader.dart';
 
 class BuildBodyWLoader extends StatelessWidget with BasePage {
@@ -7,7 +7,8 @@ class BuildBodyWLoader extends StatelessWidget with BasePage {
   final Widget body;
   final bool isHorizontalPadding16;
 
-  const BuildBodyWLoader({super.key,
+  const BuildBodyWLoader({
+    super.key,
     required this.isLoading,
     required this.body,
     this.isHorizontalPadding16 = false,

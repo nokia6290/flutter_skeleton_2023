@@ -14,19 +14,6 @@ class ErrorHandler {
         case DioErrorType.receiveTimeout:
           return AppError("error_default_title", "error_response_timeout");
 
-        // case DioErrorType.response:
-        //   if (dioError.response != null) {
-        //     final error = dioError.response!.data is String
-        //         ? dart_convert.jsonDecode(dioError.response!.data)
-        //         : dioError.response!.data;
-        //     if (error is List) {
-        //       return _deserialize(error.first);
-        //     } else {
-        //       return _deserialize(error);
-        //     }
-        //   } else {
-        //     return onUnknownError();
-        //   }
         case DioErrorType.sendTimeout:
           return AppError("error_default_title", "error_request_timeout");
 

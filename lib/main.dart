@@ -12,15 +12,16 @@ void main() async {
   await di.initFlavorConfig(Flavor.dev);
   await di.initDependencyInjector();
   await SentryFlutter.init(
-        (SentryFlutterOptions options) {
-          options.addIntegration(LoggingIntegration());
+    (SentryFlutterOptions options) {
+      options.addIntegration(LoggingIntegration());
       options.reportPackages = false;
       options.enableOutOfMemoryTracking = true;
       options.enableAppLifecycleBreadcrumbs = false;
       options.anrEnabled = true;
       options.debug = false;
       //TODO add sentry link
-      options.dsn = 'https://24304362cdd445babeb01dad113d9104@o1087560.ingest.sentry.io/4504580733665280';
+      options.dsn =
+          'https://24304362cdd445babeb01dad113d9104@o1087560.ingest.sentry.io/4504580733665280';
       // Set tracesSampleRate to 1.0 to capture 100% of transactions for performance monitoring.
       // We recommend adjusting this value in production.
       options.tracesSampleRate = 1.0;

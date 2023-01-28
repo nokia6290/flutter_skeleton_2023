@@ -1,6 +1,6 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_skeleton_2023/business/blocs/home/home_event.dart';
-import 'package:flutter_skeleton_2023/business/blocs/home/home_state.dart';
+import 'package:flutter_skeleton_2023/business/home/home_event.dart';
+import 'package:flutter_skeleton_2023/business/home/home_state.dart';
 import 'package:flutter_skeleton_2023/data/api/app_error.dart';
 import 'package:flutter_skeleton_2023/data/api/error_handler.dart';
 import 'package:flutter_skeleton_2023/data/repository_impl/joke_repository_impl.dart';

@@ -3,10 +3,10 @@ import 'dart:async';
 import 'package:flutter_skeleton_2023/data/api/dio_interceptor.dart';
 import 'package:flutter_skeleton_2023/data/api/dio_logging_interceptor.dart';
 import 'package:flutter_skeleton_2023/data/api/error_handler.dart';
+import 'package:flutter_skeleton_2023/data/api/joke/joke_api.dart';
 import 'package:flutter_skeleton_2023/data/repository_impl/joke_repository_impl.dart';
 import 'package:get_it/get_it.dart';
 import 'package:dio/dio.dart';
-import 'package:flutter_skeleton_2023/data/api/api_client.dart';
 import 'package:flutter_skeleton_2023/data/data_store/configurations/flavor_config.dart';
 import 'package:flutter_skeleton_2023/data/data_store/configurations/asset_bundler.dart'
     as bundle;
@@ -60,5 +60,5 @@ _initErrorHandler() {
 
 ///repository implementations
 _initRepositoryImplementations() {
-  di.registerLazySingleton(() => JokeRepositoryImpl(ApiClient(di.get<Dio>())));
+  di.registerLazySingleton(() => JokeRepositoryImpl(JokeApi(di.get<Dio>())));
 }

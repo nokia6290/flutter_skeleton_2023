@@ -31,8 +31,6 @@ Architecture created by the following diagram:
 - [ ] - implement Hive secure storage for tokens
 - [ ] - Language intl
 - [ ] - Strings to external file
-- [ ] - Flavors Dev, Test, UAT
-- [ ] - add flags on app when using dev/test flavor
 - [x] - advanced logger
 
 ### Tests
@@ -47,16 +45,20 @@ Architecture created by the following diagram:
 - [x] - equality
 - [x] - Lints
 - [x] - Runner.sh
-- [ ] - add sentry
-- [ ] - add google crashlytics
+- [x] - add sentry
 - [x] - colors global file
 - [x] - image url file
-- [ ] - Font system
 - [x] - images on pubspec
 - [x] - theme setup [dark native theme selected]
 
 ### Git
 - [ ] - setup git template for code review
+
+### version 2.0 template
+- [ ] Font system
+- [ ] add google crashlytics
+- [ ] Flavors Dev, Test, UAT
+- [ ] add flags on app when using dev/test flavor
 
 # build runner for serializer & other builders
 run on terminal

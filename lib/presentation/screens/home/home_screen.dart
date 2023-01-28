@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_skeleton_2023/business/blocs/home/home_bloc.dart';
-import 'package:flutter_skeleton_2023/business/blocs/home/home_event.dart';
-import 'package:flutter_skeleton_2023/business/blocs/home/home_state.dart';
-import 'package:flutter_skeleton_2023/business/services/base_class.dart';
+import 'package:flutter_skeleton_2023/business/home/home_bloc.dart';
+import 'package:flutter_skeleton_2023/business/home/home_event.dart';
+import 'package:flutter_skeleton_2023/business/home/home_state.dart';
+import 'package:flutter_skeleton_2023/presentation/widgets/base_class.dart';
 import 'package:flutter_skeleton_2023/data/data_store/dependency_injection.dart';
 import 'package:flutter_skeleton_2023/data/api/error_handler.dart';
 import 'package:flutter_skeleton_2023/data/repository_impl/joke_repository_impl.dart';

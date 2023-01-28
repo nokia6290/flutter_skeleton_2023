@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_skeleton_2023/business/services/base_class.dart';
+import 'package:flutter_skeleton_2023/presentation/widgets/base_class.dart';
 
 class AppDialogs with BasePage {
   static void showSimpleDialog(

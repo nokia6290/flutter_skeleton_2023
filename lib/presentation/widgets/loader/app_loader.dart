@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_skeleton_2023/business/services/base_class.dart';
+import 'package:flutter_skeleton_2023/presentation/widgets/base_class.dart';
 
 class AppLoader extends StatelessWidget with BasePage {
   const AppLoader({super.key});
