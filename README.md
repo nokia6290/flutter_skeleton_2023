@@ -6,6 +6,9 @@ petras.janulevicius@gmail.com
 https://www.linkedin.com/in/petras-j/
 
 
+Architecture created by the following diagram:
+<img width="1425" alt="lumiant-flutter-architecture" src="https://user-images.githubusercontent.com/13733620/215026871-813fc84b-f5fd-42ca-8389-2951cb995c89.png">
+
 ### versions
 - Flutter version 3.7.0
 
