@@ -8,7 +8,7 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   //TODO add other flavors
   await di.initFlavorConfig(Flavor.dev);
-  await di.init();
+  await di.initDependencyInjector();
   runApp(const MyApp());
 }
 

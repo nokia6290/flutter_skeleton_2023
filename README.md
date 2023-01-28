@@ -9,7 +9,7 @@ https://www.linkedin.com/in/petras-j/
 ### versions
 - Flutter version 3.7.0
 
-*When cloned project run on terminal*
+*First time project run on terminal*
 - `flutter pub run build_runner build --delete-conflicting-outputs`
 
 ## Getting Started
@@ -51,7 +51,7 @@ https://www.linkedin.com/in/petras-j/
 - [x] - image url file
 - [ ] - Font system
 - [x] - images on pubspec
-- [ ] - theme setup
+- [x] - theme setup [dark native theme selected]
 
 ### Git
 - [ ] - setup git template for code review

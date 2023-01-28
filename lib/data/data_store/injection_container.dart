@@ -7,7 +7,6 @@ import 'package:flutter_skeleton_2023/data/repository_impl/joke_repository_impl.
 import 'package:get_it/get_it.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter_skeleton_2023/data/api/api_client.dart';
-import 'package:flutter_skeleton_2023/data/api/api_service.dart';
 import 'package:flutter_skeleton_2023/data/data_store/configurations/flavor_config.dart';
 import 'package:flutter_skeleton_2023/data/data_store/configurations/asset_bundler.dart'
     as bundle;
@@ -22,31 +21,31 @@ initFlavorConfig(Flavor flavor) async {
   di.registerLazySingleton(() => flavor);
 }
 
-Future<void> init() async {
+Future<void> initDependencyInjector() async {
   _initErrorHandler();
   _initNetworking();
+  _initNetworkingInterceptor();
+  _initRepositoryImplementations();
 
   // di.registerLazySingleton(() => NavigationService());
 }
 
 _initNetworking() {
-  final Dio dio = Dio(
-    BaseOptions(
-      contentType: "application/json",
-      baseUrl: di.get<FlavorConfig>().backendApiRootUrl,
-    ),
-  );
-  di.registerLazySingleton(() => ApiService(ApiClient(dio)));
+  di.registerLazySingleton(() => Dio(
+        BaseOptions(
+          contentType: "application/json",
+          baseUrl: di.get<FlavorConfig>().backendApiRootUrl,
+        ),
+      ));
+}
 
-  ///repository implementations
-  di.registerLazySingleton(
-      () => JokeRepositoryImpl(ApiService(ApiClient(dio))));
+_initNetworkingInterceptor() {
+  final Dio dio = di.get<Dio>();
 
-  ///dio interceptor
   dio.interceptors.addAll([
     DioInterceptor(
-        dio: dio,
-        errorHandler: di.get<ErrorHandler>(),
+      dio: dio,
+      errorHandler: di.get<ErrorHandler>(),
     ),
     DioLoggingInterceptor()
   ]);
@@ -55,4 +54,9 @@ _initNetworking() {
 _initErrorHandler() {
   final ErrorHandler errorHandler = ErrorHandler();
   di.registerLazySingleton(() => errorHandler);
+}
+
+///repository implementations
+_initRepositoryImplementations() {
+  di.registerLazySingleton(() => JokeRepositoryImpl(ApiClient(di.get<Dio>())));
 }
