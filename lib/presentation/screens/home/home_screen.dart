@@ -4,7 +4,7 @@ import 'package:flutter_skeleton_2023/business/blocs/home/home_bloc.dart';
 import 'package:flutter_skeleton_2023/business/blocs/home/home_event.dart';
 import 'package:flutter_skeleton_2023/business/blocs/home/home_state.dart';
 import 'package:flutter_skeleton_2023/business/services/base_class.dart';
-import 'package:flutter_skeleton_2023/data/data_store/injection_container.dart';
+import 'package:flutter_skeleton_2023/data/data_store/dependency_injection.dart';
 import 'package:flutter_skeleton_2023/data/api/error_handler.dart';
 import 'package:flutter_skeleton_2023/data/repository_impl/joke_repository_impl.dart';
 import 'package:flutter_skeleton_2023/presentation/resources/image_path.dart';

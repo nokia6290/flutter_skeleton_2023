@@ -10,6 +10,7 @@ import 'package:flutter_skeleton_2023/data/api/api_client.dart';
 import 'package:flutter_skeleton_2023/data/data_store/configurations/flavor_config.dart';
 import 'package:flutter_skeleton_2023/data/data_store/configurations/asset_bundler.dart'
     as bundle;
+import 'package:sentry_dio/sentry_dio.dart';
 
 final GetIt di = GetIt.instance;
 
@@ -49,6 +50,7 @@ _initNetworkingInterceptor() {
     ),
     DioLoggingInterceptor()
   ]);
+  dio.addSentry();
 }
 
 _initErrorHandler() {

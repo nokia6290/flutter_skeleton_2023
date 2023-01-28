@@ -1,16 +1,15 @@
 # flutter_skeleton_2023
-
 A new Flutter project that has bloc, domain driven design made in 2023
 Made by Petras Janulevicius
 petras.janulevicius@gmail.com
 https://www.linkedin.com/in/petras-j/
 
-
 Architecture created by the following diagram:
 <img width="1425" alt="lumiant-flutter-architecture" src="https://user-images.githubusercontent.com/13733620/215026871-813fc84b-f5fd-42ca-8389-2951cb995c89.png">
 
 ### versions
-- Flutter version 3.7.0
+- Flutter SDK version 3.7.0
+- Dart 2.19
 
 *First time project run on terminal*
 - `flutter pub run build_runner build --delete-conflicting-outputs`
