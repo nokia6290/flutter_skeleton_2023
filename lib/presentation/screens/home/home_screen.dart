@@ -4,11 +4,13 @@ import 'package:flutter_skeleton_2023/business/home/home_bloc.dart';
 import 'package:flutter_skeleton_2023/business/home/home_event.dart';
 import 'package:flutter_skeleton_2023/business/home/home_state.dart';
 import 'package:flutter_skeleton_2023/presentation/resources/text_styles.dart';
+import 'package:flutter_skeleton_2023/presentation/screens/settings/settings_screen.dart';
 import 'package:flutter_skeleton_2023/presentation/widgets/base_class.dart';
 import 'package:flutter_skeleton_2023/data/data_store/dependency_injection.dart';
 import 'package:flutter_skeleton_2023/data/api/error_handler.dart';
 import 'package:flutter_skeleton_2023/data/repository_impl/joke_repository_impl.dart';
 import 'package:flutter_skeleton_2023/presentation/widgets/body_loader/build_body_w_loader.dart';
+import 'package:get/get.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -38,7 +40,9 @@ class _HomeScreenState extends State<HomeScreen> with BasePage {
         title: Text("Chuck Norris Jokes"),
         actions: [
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              Get.to(const SettingsScreen());
+            },
             icon: const Icon(Icons.settings),
           ),
         ],
@@ -77,7 +81,7 @@ class _HomeScreenState extends State<HomeScreen> with BasePage {
               padding: const EdgeInsets.all(16.0),
               child: Text(
                 jokeString ?? "no joke yet",
-                style: TextStyles.body_14_m_black.font,
+                style: TextStyles.body_14_m_white.font,
               ),
             ),
           ],

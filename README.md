@@ -22,15 +22,12 @@ Architecture created by the following diagram:
 - [x] - implement api service call
 - [x] - implement repository class
 - [x] - implement repository implementation class
-- [ ] - implement navigation service (auto or manual)
+- [x] - implement navigation service (auto or manual)
 - [x] - implement dependency injector
 - [x] - error handler
 - [x] - json serializer
 - [x] - Reusable text style
 - [x] - Mixin BaseClass with most used services
-- [ ] - implement Hive secure storage for tokens
-- [ ] - Language intl
-- [ ] - Strings to external file
 - [x] - advanced logger
 
 ### Tests
@@ -52,13 +49,16 @@ Architecture created by the following diagram:
 - [x] - theme setup [dark native theme selected]
 
 ### Git
-- [ ] - setup git template for code review
+- [x] - setup git template for code review
 
 ### version 2.0 template
 - [ ] Font system
 - [ ] add google crashlytics
 - [ ] Flavors Dev, Test, UAT
 - [ ] add flags on app when using dev/test flavor
+- [ ] implement Hive secure storage for tokens
+- [ ] Language intl
+- [ ] Strings to external file
 
 # build runner for serializer & other builders
 run on terminal

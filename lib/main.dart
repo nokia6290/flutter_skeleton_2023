@@ -3,6 +3,7 @@ import 'package:flutter_skeleton_2023/data/data_store/dependency_injection.dart'
     as di;
 import 'package:flutter_skeleton_2023/data/data_store/configurations/flavor_config.dart';
 import 'package:flutter_skeleton_2023/presentation/screens/home/home_screen.dart';
+import 'package:get/get.dart';
 import 'package:sentry_flutter/sentry_flutter.dart';
 import 'package:sentry_logging/sentry_logging.dart';
 
@@ -35,9 +36,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      theme: ThemeData.dark(useMaterial3: true),
+    return GetMaterialApp(
       home: const HomeScreen(),
+      theme: ThemeData.dark(useMaterial3: true),
     );
   }
 }
