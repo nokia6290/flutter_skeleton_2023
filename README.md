@@ -39,7 +39,7 @@ Architecture created by the following diagram:
 
 ### Other helpful packages
 - [x] equality
-- [x] Lints
+- [x] lints
 - [x] runner.sh for formatter [ on terminal `flutter format .` or `dart format .`]
 - [x] add sentry
 - [x] colors global file
