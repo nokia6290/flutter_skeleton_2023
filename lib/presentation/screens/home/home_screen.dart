@@ -77,7 +77,7 @@ class _HomeScreenState extends State<HomeScreen> with BasePage {
               padding: const EdgeInsets.all(16.0),
               child: Text(
                 jokeString ?? "no joke yet",
-                style: TextStyles.body_14_m_black,
+                style: TextStyles.body_14_m_black.font,
               ),
             ),
           ],
