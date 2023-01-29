@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 // small < 14, body 14-19, heading 20+ title 40+
 // small_9_r_white -> name, fontSize, fontWeight, color, height
-// to add  -> style: TextStyles.socialButton.original,
+// to add  -> style: TextStyles.body_14_m_black.font,
 // thin = w100, ultralight = w200, l light = w300, r regular = w400,
 // m medium = w500, sb semi-bold = w600, b bold = w700, eb extra-bold = w800, h black = w900
 class TextStyles {
