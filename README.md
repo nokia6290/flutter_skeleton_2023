@@ -15,50 +15,49 @@ Architecture created by the following diagram:
 - `flutter pub run build_runner build --delete-conflicting-outputs`
 
 ## Getting Started
-- [x] - implement dio package
-- [x] - implement bloc example
-- [x] - implement bloc consumer [UI] example
-- [x] - implement api client
-- [x] - implement api service call
-- [x] - implement repository class
-- [x] - implement repository implementation class
-- [x] - implement navigation service (auto or manual)
-- [x] - implement dependency injector
-- [x] - error handler
-- [x] - json serializer
-- [x] - Reusable text style
-- [x] - Mixin BaseClass with most used services
-- [x] - advanced logger
+- [x] implement dio package
+- [x] implement bloc example
+- [x] implement bloc consumer [UI] example
+- [x] implement api client
+- [x] implement repository class
+- [x] implement repository implementation class
+- [x] implement navigation service
+- [x] implement dependency injector
+- [x] error handler
+- [x] json serializer
+- [x] reusable text style
+- [x] mixin BaseClass with most used services
+- [x] advanced logger
 
 ### Tests
-- [ ] - example of unit tests
-- [ ] - example of widget tests
-- [ ] - example of integration tests
+- [ ] example of unit tests
+- [ ] example of widget tests
+- [ ] example of integration tests
 
 ### API example
-- [x] - fetch some data from Chuck Norris API
+- [x] fetch some data from Chuck Norris API
 
 ### Other helpful packages
-- [x] - equality
-- [x] - Lints
-- [x] - Runner.sh
-- [x] - add sentry
-- [x] - colors global file
-- [x] - image url file
-- [x] - images on pubspec
-- [x] - theme setup [dark native theme selected]
+- [x] equality
+- [x] Lints
+- [x] runner.sh for formatter [ on terminal ~ flutter format .~ or ~dart format .~]
+- [x] add sentry
+- [x] colors global file
+- [x] image url file
+- [x] images on pubspec
+- [x] theme setup [dark native theme selected]
 
 ### Git
-- [x] - setup git template for code review
+- [x] setup git template for code review
 
 ### version 2.0 template
-- [ ] Font system
+- [ ] font system
 - [ ] add google crashlytics
-- [ ] Flavors Dev, Test, UAT
+- [ ] flavors Dev, Test, UAT
 - [ ] add flags on app when using dev/test flavor
 - [ ] implement Hive secure storage for tokens
-- [ ] Language intl
-- [ ] Strings to external file
+- [ ] language intl
+- [ ] strings to external file
 
 # build runner for serializer & other builders
 run on terminal
