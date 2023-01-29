@@ -27,8 +27,6 @@ Future<void> initDependencyInjector() async {
   _initNetworking();
   _initNetworkingInterceptor();
   _initRepositoryImplementations();
-
-  // di.registerLazySingleton(() => NavigationService());
 }
 
 _initNetworking() {

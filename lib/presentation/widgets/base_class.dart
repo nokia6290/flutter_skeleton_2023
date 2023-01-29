@@ -27,8 +27,4 @@ mixin BasePage {
         getScreenSize(context).height - topPadding - bottomPadding - topBar;
     return height2;
   }
-
-  // NavigationService getNav() {
-  //   return di.get<NavigationService>();
-  // }
 }
