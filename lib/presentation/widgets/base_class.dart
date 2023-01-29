@@ -2,21 +2,21 @@ import 'package:flutter/material.dart';
 import 'package:flutter_skeleton_2023/presentation/widgets/app_dialogs/app_dialogs.dart';
 
 mixin BasePage {
-  Size getScreenSize(BuildContext context) {
-    final Size screenSize = MediaQuery.of(context).size;
-    return screenSize;
-  }
-
   dismissKeyboard(context) {
     FocusScope.of(context).unfocus();
   }
 
   void onErrorShowErrorDialog(context, state) {
     AppDialogs.showSimpleDialog(
-      context,
-      state.error.title,
-      state.error.description,
+      context: context,
+      errorTitle: state.error.title,
+      errorMessage: state.error.description,
     );
+  }
+
+  Size getScreenSize(BuildContext context) {
+    final Size screenSize = MediaQuery.of(context).size;
+    return screenSize;
   }
 
   double getScreenHeightWSafeArea(BuildContext context) {
@@ -31,8 +31,4 @@ mixin BasePage {
   // NavigationService getNav() {
   //   return di.get<NavigationService>();
   // }
-
-  EdgeInsets getViewInsets(BuildContext context) {
-    return MediaQuery.of(context).viewInsets;
-  }
 }

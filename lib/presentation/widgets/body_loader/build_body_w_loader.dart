@@ -5,38 +5,23 @@ import 'package:flutter_skeleton_2023/presentation/widgets/loader/app_loader.dar
 class BuildBodyWLoader extends StatelessWidget with BasePage {
   final bool isLoading;
   final Widget body;
-  final bool isHorizontalPadding16;
 
   const BuildBodyWLoader({
     super.key,
     required this.isLoading,
     required this.body,
-    this.isHorizontalPadding16 = false,
   });
-
-  double isHorizontalPaddingRequired() {
-    double paddingHorizontal;
-    isHorizontalPadding16 ? paddingHorizontal = 16 : paddingHorizontal = 0;
-    return paddingHorizontal;
-  }
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.symmetric(
-        horizontal: isHorizontalPaddingRequired(),
-      ),
-      child: _buildBody(),
+    return Stack(
+      children: <Widget>[
+        body,
+        if (isLoading)
+          const Positioned.fill(
+            child: AppLoader(),
+          ),
+      ],
     );
   }
-
-  Widget _buildBody() => Stack(
-        children: <Widget>[
-          body,
-          if (isLoading)
-            const Positioned.fill(
-              child: AppLoader(),
-            ),
-        ],
-      );
 }

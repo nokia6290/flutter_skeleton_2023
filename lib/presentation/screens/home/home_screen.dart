@@ -3,11 +3,11 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_skeleton_2023/business/home/home_bloc.dart';
 import 'package:flutter_skeleton_2023/business/home/home_event.dart';
 import 'package:flutter_skeleton_2023/business/home/home_state.dart';
+import 'package:flutter_skeleton_2023/presentation/resources/text_styles.dart';
 import 'package:flutter_skeleton_2023/presentation/widgets/base_class.dart';
 import 'package:flutter_skeleton_2023/data/data_store/dependency_injection.dart';
 import 'package:flutter_skeleton_2023/data/api/error_handler.dart';
 import 'package:flutter_skeleton_2023/data/repository_impl/joke_repository_impl.dart';
-import 'package:flutter_skeleton_2023/presentation/resources/image_path.dart';
 import 'package:flutter_skeleton_2023/presentation/widgets/body_loader/build_body_w_loader.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -77,11 +77,9 @@ class _HomeScreenState extends State<HomeScreen> with BasePage {
               padding: const EdgeInsets.all(16.0),
               child: Text(
                 jokeString ?? "no joke yet",
-                style: Theme.of(context).textTheme.headline4,
+                style: TextStyles.body_14_m_black,
               ),
             ),
-            // Image.asset(ImagePath.logo1.imgUrl),
-            // Image.asset(ImagePath.logo2.imgUrl),
           ],
         ),
       ),

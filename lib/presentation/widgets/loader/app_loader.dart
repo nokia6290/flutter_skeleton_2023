@@ -12,7 +12,7 @@ class AppLoader extends StatelessWidget with BasePage {
       color: Colors.transparent,
       child: const Center(
         child: CircularProgressIndicator(
-          valueColor: AlwaysStoppedAnimation<Color>(Colors.black),
+          valueColor: AlwaysStoppedAnimation<Color>(Colors.black87),
         ),
       ),
     );

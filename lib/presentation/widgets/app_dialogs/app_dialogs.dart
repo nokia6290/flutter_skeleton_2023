@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_skeleton_2023/presentation/widgets/base_class.dart';
 
 class AppDialogs with BasePage {
-  static void showSimpleDialog(
-    BuildContext context,
-    String errorTitle,
-    String errorMessage,
-  ) {
+  static void showSimpleDialog({
+    required BuildContext context,
+    required String errorTitle,
+    required String errorMessage,
+  }) {
     showDialog(
       context: context,
       builder: (BuildContext context) {
