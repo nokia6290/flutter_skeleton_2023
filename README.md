@@ -58,6 +58,7 @@ Architecture created by the following diagram:
 - [ ] implement Hive secure storage for tokens
 - [ ] language intl
 - [ ] strings to external file
+- [ ] bloc hydrated storage (preserve state if app terminated)
 
 # build runner for serializer & other builders
 run on terminal
